@@ -1,11 +1,12 @@
 //  UI/about-me-app2/src/app/components/profile/profile.ts
 import { Component } from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {TextareaButtonComponent} from '../spartan/textarea-button';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TextareaButtonComponent],
   templateUrl: './profile.html',
   styleUrl: './profile.css',
 })

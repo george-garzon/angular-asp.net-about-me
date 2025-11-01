@@ -8,7 +8,7 @@ import {TextareaButtonComponent} from './components/spartan/textarea-button';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Profile,TextareaButtonComponent ],
+  imports: [RouterOutlet, Profile ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
