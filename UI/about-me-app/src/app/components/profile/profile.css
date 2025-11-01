@@ -1,0 +1,132 @@
+:root {
+  --page-max-width: 1100px;
+  --gutter: 32px;
+  --muted: #6b6b6b;
+  --text: #111111;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+.profile-page {
+  color: var(--text);
+  background: var(--bg);
+  padding: 48px 16px;
+}
+
+.container {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+}
+
+/* Two-column layout: left narrow image, right content */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-top: 10px;
+}
+
+/* Photo box */
+.photo-wrap {
+  padding: 18px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease-in-out; /* smooth animation */
+  transform-origin: center;
+}
+.photo-wrap {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.photo-wrap:hover {
+  transform: rotate(-1deg) scale(1.01);
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* Content */
+.content {
+  padding-top: 6px;
+}
+
+.name {
+  margin: 0 0 8px 0;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.title {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Bio paragraphs */
+.bio {
+  color: #222;
+  line-height: 1.75;
+  font-size: 15px;
+}
+
+.bio p {
+  margin: 16px 0;
+}
+
+/* signature area */
+.signature {
+  margin-top: 28px;
+}
+
+.sig-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Social links */
+.socials {
+  margin-top: 26px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.social-link {
+  color: #6a6a6a;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Small screens: stack */
+@media (max-width: 880px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .photo {
+    max-width: 240px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+}

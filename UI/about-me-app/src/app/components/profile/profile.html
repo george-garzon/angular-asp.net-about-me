@@ -1,0 +1,25 @@
+<div class="profile-page">
+  <div class="profile-grid container">
+    <div class="photo-wrap">
+      <img src="/GGHeadshot.jpg" alt="Profile photo of {{name}}" class="photo" />
+    </div>
+
+    <div class="content">
+      <h1 class="name">{{ name }}</h1>
+      <div class="title">{{ title }}</div>
+
+      <div class="bio">
+        <p *ngFor="let p of bio">{{ p }}</p>
+      </div>
+
+      <div class="signature">
+        <div class="sig-name">{{ signature }}</div>
+        <div class="updated">Last updated: {{ lastUpdated }}</div>
+      </div>
+
+      <div class="socials">
+        <a *ngFor="let s of socials" [href]="s.href" class="social-link">{{ s.label }}</a>
+      </div>
+    </div>
+  </div>
+</div>
