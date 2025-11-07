@@ -14,13 +14,13 @@ RUN npm run build -- --configuration production
 # ======================================
 FROM nginx:alpine
 
-# Clean default Nginx content
+# Clean out default HTML
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy Angular dist output
+# Copy your Angular build output
 COPY --from=build /app/dist/about-me-app /usr/share/nginx/html
 
-# Add routing-friendly Nginx config
+# Use custom Nginx config for Angular routing
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
