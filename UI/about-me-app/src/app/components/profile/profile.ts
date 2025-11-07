@@ -14,11 +14,11 @@ export class Profile {
   name = 'George Garzon';
   title = 'Full Stack Developer · Husband & Father · Creator of Homeport Travel';
   bio = [
-    `With nearly a decade of design experience, I’ve worked closely with teams and founders around the world — learning what works, what doesn’t, and how even the smallest design choices can shape user behavior.`,
-    `My journey wasn’t linear. I made plenty of mistakes, but each one taught me valuable lessons. I learned by doing, by building products, studying design psychology, reading books, and analyzing real case studies. Over time, this mix of practice and study shaped my approach to creating effective, emotionally intelligent interfaces.`,
-    `In the last ten years, I’ve worked on 200+ projects across startups and global companies, achieved Top Rated recognition on Fiverr and Upwork, and was selected for Fiverr Pro for design quality. Beyond client work, I’ve enjoyed teaching and mentoring junior designers locally, helping them grow into confident freelancers and product designers.`,
-    `Today, I run Hugeicons, a 40,000+ icon library trusted by 150K+ designers and developers, and Halal Lab, a UX studio where we create clean, effective digital products.`,
-    `Now, I’ve officially begun teaching with a simple mission: to empower designers to think deeper, design with purpose, and craft products people truly love.`
+    `With over half a decade of development experience, I specialize in frontend and backend web applications. Have worked on small-large-scale API integrations. Designed beautiful data tables. Managed team members conducted code reviews, self-hosted with docker. I’ve worked closely with teams and departments collaborating to gain a better perspective and deliver a more efficient product.`,
+    `My journey wasn’t linear. I made plenty of mistakes, but each one taught me valuable lessons. I learned by doing, by building products, teaching others, reading software engineering books, and taking Udemy/YouTube classes to further my skillset. Over time, this mix of practice and study shaped my approach to shipping features that are visually appealing and bug free.`,
+    `In the last six years, I’ve worked various projects across startups and nationwide companies, known as the ‘Swiss-Army Knife’, and was selected as Employee of The Month. Beyond work, I enjoy Football, Concerts, Cruising, Binging a Thriller TV Series, and spending time with my beloved family. `,
+    `Today, I am a father & husband, continuing my craft at Olympia Pharmaceuticals, The science behind a healthy lifestyle, & Homeport Travel a travel agency showcasing the best deals to travel by sea.`,
+    ``
   ];
   signature = 'George Garzon';
   lastUpdated = '1 Nov, 2025';
