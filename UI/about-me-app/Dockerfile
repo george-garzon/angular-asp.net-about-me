@@ -13,9 +13,10 @@ RUN npm run build -- --configuration production
 RUN ls -R /app/dist
 
 FROM nginx:alpine
+RUN rm -rf /usr/share/nginx/html/*
 COPY dynamic-env.json /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist/about-me-app /usr/share/nginx/html
+COPY --from=build /app/dist/about-me-app/browser /usr/share/nginx/html
 
 
 EXPOSE 80
