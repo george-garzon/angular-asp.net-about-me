@@ -9,14 +9,14 @@ RUN npm ci
 COPY . .
 RUN npm run build -- --configuration production
 
-# ======================================
-# Stage 2 - Serve via Nginx
-# ======================================
-FROM nginx:alpine
+# Debug check
+RUN ls -R /app/dist
 
+FROM nginx:alpine
 COPY dynamic-env.json /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist/about-me-app /usr/share/nginx/html
+
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
