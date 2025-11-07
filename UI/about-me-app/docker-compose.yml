@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  about-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: about-ui
+    restart: unless-stopped
+    expose:
+      - 80
+    ports:
+      - "82:80" # external:internal (you can change external port if needed)
