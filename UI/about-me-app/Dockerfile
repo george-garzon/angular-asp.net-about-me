@@ -10,7 +10,7 @@ COPY package*.json /app/
 RUN yarn
 COPY . /app
 
-RUN yarn build:sta
+RUN yarn
 
 FROM nginx:alpine
 COPY dynamic-env.json /usr/share/nginx/html
